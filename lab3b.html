@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>reverse</title>
+  </head>
+  <script type="text/javascript">
+    function reverse() {
+      var s = prompt("Enter the Number:");
+      let result = 0;
+      for (let i = s.length - 1; i >= 0; i--) {
+        result = result * 10 + Number(s[i]);
+      }
+      // document.write("<h2>The reverse of number " + s + "is "+ result +"</h2>");
+      alert(result);
+    }
+  </script>
+  <body onload="reverse()"></body>
+</html>

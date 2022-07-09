@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<student>
+    <info>
+        <usn>4ni19is035</usn>
+        <name>Gulshan Kumar</name>
+        <college>NIE</college>
+    </info>
+    <info>
+        <usn>4ni19is035</usn>
+        <name>Gulshan Kumar</name>
+        <college>NIE</college>
+    </info>
+</student>
