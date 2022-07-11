@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <title>reverse</title>
+    <title>Program 3b</title>
   </head>
   <script type="text/javascript">
-    function reverse() {
-      var s = prompt("Enter the Number:");
-      let result = 0;
-      for (let i = s.length - 1; i >= 0; i--) {
-        result = result * 10 + Number(s[i]);
+    function rev() {
+      var n = prompt("Enter a number: ", "");
+      var str = 0;
+      if (n[0] == "-") {
+        var f = true;
+        n = n.slice(1);
       }
-      // document.write("<h2>The reverse of number " + s + "is "+ result +"</h2>");
-      alert(result);
+      for (i = n.length - 1; i >= 0; i--) str = str * 10 + Number(n[i]);
+      if (f && str != 0) {
+        str = str * -1;
+      }
+      alert(str);
     }
   </script>
-  <body onload="reverse()"></body>
+  <body onload="rev()"></body>
 </html>

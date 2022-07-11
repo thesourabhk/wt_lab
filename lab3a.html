@@ -1,21 +1,30 @@
-<html>
-  <head>
-    <title>Program 3b</title>
-  </head>
-  <script type="text/javascript">
-    function rev() {
-      var n = prompt("Enter a number: ", "");
-      var str = 0;
-      if (n[0] == "-") {
-        var f = true;
-        n = n.slice(1);
-      }
-      for (i = n.length - 1; i >= 0; i--) str = str * 10 + Number(n[i]);
-      if (f && str != 0) {
-        str = str * -1;
-      }
-      alert(str);
-    }
-  </script>
-  <body onload="rev()"></body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <html>
+    <head>
+      <title></title>
+    </head>
+
+    <body>
+      <script>
+        var s = prompt("Enter a String");
+        var n = s.length;
+        var idx = -1;
+
+        document.write("<h2> The leftmost vowel for the </h2>");
+        const vowel = ["a", "e", "i", "o", "u", "A", "E", "I"];
+        for (var i = 0; i < n; i++) {
+          if (vowel.includes(s[i])) {
+            idx = i + 1;
+            break;
+          }
+        }
+        if (idx == -1) {
+          document.write("<h2> NO VOWEL </h2>");
+        } else {
+          document.write("<h2>" + idx + "</h2>");
+        }
+      </script>
+    </body>
+  </html>
 </html>
