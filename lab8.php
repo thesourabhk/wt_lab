@@ -1,7 +1,11 @@
 <?php
-    $name =(string) readline("Enter your name ");
-    $greetings = array("hi","hello","welcome","good morning");
-    $rand_key = array_rand($greetings);
-    $greeting = $greetings[$rand_key];
-    echo "<h3>$greeting $name</h3>"; 
+    function lag(){
+        $greet = array("Hello","Hai","Nice meeting you","Have a nice day");
+        $idx = rand()%4;
+        return $greet[$idx];
+    }
+        $name = readline("Enter the name of the person: ");
+        $greet = lag();
+        echo $greet." ".$name;
+
 ?>

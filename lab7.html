@@ -1,13 +1,20 @@
 <html>
-    <body>
-        <form action="lab7.php" method="post">
-            <h5>Enter First number: </h5>
-            <input type="text" name="fn">
-            <h5>Enter second number: </h5>
-            <input type="text" name="sn">
-            <h5>Enter third number: </h5>
-            <input type="text" name="tn">
-            <input type="submit">
-        </form>
-    </body>
+  <body>
+    <form method="post">
+      <h5>Enter First number:</h5>
+      <input type="text" name="fn" />
+      <h5>Enter second number:</h5>
+      <input type="text" name="sn" />
+      <h5>Enter third number:</h5>
+      <input type="text" name="tn" />
+      <input type="submit" />
+    </form>
+    <?php
+
+    $num1=(int)$_POST['fn'];
+    $num2=(int)$_POST['sn'];
+    $num3=(int)$_POST['tn'];
+    if($num1>$num2 && $num1>$num3){ echo $num1; } else{ if($num2>$num1 &&
+    $num2>$num3){ echo $num2; } else echo $num3; } ?>
+  </body>
 </html>
